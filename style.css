@@ -43,6 +43,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 7.0 - Footer
  * 8.0 - Media Queries
  * 9.0 - Print
+ * 10 - Custom
  * ----------------------------------------------------------------------------
  */
 
@@ -3212,7 +3213,19 @@ footer.entry-meta {
 }
 
 
-/* Custom */
+/**
+ * 10 Custom
+ * ----------------------------------------------------------------------------
+ */
+
+h1{
+	font-size: 30px;
+}
+
+.navbar{
+	background-color: #C09576;
+}
+
 #fb-social{
 	background: url(images/social-media-sprite.png) no-repeat 0 0;
 	width: 59px;
@@ -3220,6 +3233,16 @@ footer.entry-meta {
 	display:block;
 }
 
+#fb-social:hover{
+	opacity: 0.5;
+}
+
 #main{
 	min-height:1000px;
 }
+
+.entry-title a:hover{
+	text-decoration: none;
+}
+
+
