@@ -827,10 +827,6 @@ img.wp-smiley,
 	width: 290px;
 }
 
-.site-header .site-title:hover {
-	text-decoration: underline;
-}
-
 .site-title {
 	font-size: 60px;
 	font-weight: bold;
@@ -3015,6 +3011,9 @@ footer.entry-meta {
 	.site-title {
 		font-weight: normal;
 	}
+  .site-header{
+    display: none !important;
+  }
 	.site-description {
 	    clip: rect(1px, 1px, 1px, 1px);
 	    position: absolute;
@@ -3230,7 +3229,7 @@ h1{
 	background: url(images/social-media-sprite.png) no-repeat 0 0;
 	width: 59px;
 	height: 59px;
-	display:block;
+	display: block;
 }
 
 #fb-social:hover{
@@ -3244,5 +3243,60 @@ h1{
 .entry-title a:hover{
 	text-decoration: none;
 }
+
+/*Dropdown*/
+/* Dropdown Button */
+.dropbtn {
+    width: 100px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+.triangle {
+  position: absolute;
+  top: 17px;
+  right: 11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    right: 25px;
+    top: 8px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
 
 

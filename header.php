@@ -38,6 +38,16 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</a>
 
+      <div class="dropdown" onclick="dropdown()">
+        <button class="dropbtn">Language</button>
+        <ul id="myDropdown" class="dropdown-content">
+          <li><a href="http://afractie.be/new">Nederlands</a></li>
+          <li><a href="http://afractie.be/fr">Français</a></li>
+          <li><a href="http://afractie.be/en">English</a></li>
+        </ul>
+        <div class="triangle"></div>
+      </div>
+
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<button class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></button>
@@ -46,6 +56,31 @@
 					<?php get_search_form(); ?>
 				</nav><!-- #site-navigation -->
 			</div><!-- #navbar -->
+
+      <script>
+              /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function dropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+
+
 		</header><!-- #masthead -->
 
 		<div id="main" class="site-main">
